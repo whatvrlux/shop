@@ -1,0 +1,25 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #020204;
+
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    border-bottom: 1px solid #32323D;
+}
+
+.header__line {
+
+}
+
+.header__line-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
