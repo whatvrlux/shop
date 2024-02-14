@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -5,7 +7,14 @@
 body {
     margin: 0;
     background-color: #020204;
+    font-family: 'Jost', sans-serif;
+}
+a {
+    text-decoration: none;
+}
 
+img {
+    display: block;
 }
 .container {
     width: 1200px;
@@ -16,10 +25,97 @@ body {
 }
 
 .header__line {
+    border-bottom: 1px solid #32323D;
 
 }
 
 .header__line-wrapper {
+    height: 30px;
+    /*padding: 6px 0;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__lng {
+    display: flex;
+}
+
+.header__lng a {
+    margin-right: 10px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+.header__lng a.active {
+    color: #C7A17A;
+}
+
+.header__phone {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.header__wrapper {
+    height: 90px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
+}
+.header__block {
+    width: 40%;
+}
+
+.header__block.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav {
+    display: flex;
+}
+.nav__link {
+    margin-right: 35px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color .2c ease;
+}
+
+.nav__link:hover{
+    color: #C7A17A;
+
+}
+.nav__link.active {
+    color: #C7A17A;
+
+}
+
+.logo img {
+    height: 54px;
+}
+
+.header__actions {
+    display: flex;
+
+}
+.header__link {
+    margin-right: 30px;
+    position: relative;
+}
+.header__link:last-child {
+    margin-right: 0;
+}
+.header__link-event {
+    width: 6px;
+    height: 6px;
+    background-color: #C7A17A;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -3px;
 }
